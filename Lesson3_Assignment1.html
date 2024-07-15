@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Collection</title>
+</head>
+
+<body>
+  <h1> HTML5 input types</h1>
+<!--Task 1-->
+  <form action="/submit" method="post">
+    <label for=" user-email">Email</label>
+    <br>
+    <input type="email" id="user-email" name="user-email"
+      placeholder="Enter your email" required>
+    <br> 
+  
+    <button type="submit">Submit</button>
+
+    <br><br>
+<!--Task 2-->
+
+    <label for="quantity">Quantity</label>
+    <br>
+    <input type="number" id="quantity" name="quantity" min="1" max="10" step="1"
+      placeholder="Enter a quantity" required>
+  
+    <br><br>
+<!--Task 3-->
+
+    <label for="date">Date</label>
+    <br>
+    <input type="date" id="date" name="date">
+    <br><br>
+
+<!--Task 4-->
+
+    <label for="brightness">Brightness (between 0 and 100)</label>
+    <br>
+    <input type="range" id="brightness" name="brightness" min="0" max="100"
+      placeholder="50">
+
+    <br><br>
+
+<!--Task 5 Bonus-->
+
+    <label for="color">Select a color</label>
+    <br>
+    <input type="color" id="color" name="color" value="#008000"
+      placeholder="Select a color"
+  </form>
+  <br>
+
+  <hr>
+
+  <h2>Building a Comprehensive Web Form</h2>
+
+<!--Task 1-->
+
+<!--Programming-->
+  <form>
+    <label for="programming language">Choose your favorite programming language</label>
+    <br>
+    <select name="programming language" id="programming language" aria-label="Favorite Programming language">
+      <option value="python">Python</option>
+      <option value="java">Java</option>
+      <option value="c++">C++</option>
+      <option value="javascript">Javascript</option>
+      <option value="ruby">Ruby</option>
+      <option value="swift">Swift</option>
+    </select>
+    <br><br>
+
+<!--Radio buttons-->
+
+    <label for="radio buttons">Select your level of expertise</label>
+    <br>
+    <input type="radio" id="beginner" name="expertise" value="beginner">
+    <label for="beginner">Beginner</label>
+    <br>
+    <input type="radio" id="intermediate" name="expertise" value="intermediate">
+    <label for="intermediate">Intermediate</label>
+    <br>
+    <input type="radio" id="advanced" name="expertise" value="advanced">
+    <label for="advanced">Advanced</label>
+    <br><br>
+
+<!--Platforms-->
+
+    <label for="platforms">Select your preferred development platforms</label>
+    <br>
+    <input type="checkbox" id="mobile" name="platform" value="mobile">
+    <label for="mobile">Mobile</label>
+    <br>
+    <input type="checkbox" id="web" name="platform" value="web">
+    <label for="web">Web</label>
+    <br>
+    <input type="checkbox" id="desktop" name="platform" value="desktop">
+    <label for="desktop">Desktop</label> 
+
+  </form>
+
+</body>
+
+
+</html>
